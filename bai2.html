@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function songuyento(num) {
+        let so = 0
+        if (num >= 2) {
+            for (let i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    so++;
+                }
+            }
+        } else {
+            so++;
+        }
+        if (so > 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+     let so = Number(prompt("nhập vào 1 số nguyên"));
+     if(songuyento(so)) {
+         document.write(so + " là số nguyên tố");
+     } else {
+         document.write(so + "không là số nguyên tố");
+     }
+     </script>
+</body>
+</html>

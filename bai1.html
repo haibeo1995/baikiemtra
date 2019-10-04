@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
+</head>
+<body>
+<script>
+   let tb;
+   let Toan;
+   let Van;
+   let Anh;
+   do {
+       Toan = parseFloat(prompt("nhap diem toan"));
+   }
+   while (Toan<0 || Toan >10 )
+   do {
+       Anh = parseFloat(prompt("nhap diem anh"));
+   }
+   while (Anh<0 || Anh >10)
+   do {
+       Van = parseFloat(prompt("nhap diem van"));
+   }
+   while (Van<0 || Van>10)
+   tb = ((Toan*2) + Van + (Anh*2))/5;
+    if (tb>8.5){
+        document.write(tb + "=> tốt");
+    }else if (tb<8.5 && tb>=7.6){
+        document.write(tb +" => khá");
+    }else if (tb<7.5 && tb>=5) {
+        document.write(tb + "=> đạt");
+    }else {
+        document.write(tb +" => không đạt");
+    }
+</script>
+</body>
+</html>
